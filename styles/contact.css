@@ -1,0 +1,128 @@
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-size: 1rem;
+}
+
+form fieldset{
+    display: flex;
+    border: none;
+    flex-direction: column;
+    gap: 5px;
+}
+
+form fieldset:nth-child(1){
+    gap: 20px;
+}
+
+form fieldset div{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+
+label{
+    color: white;
+}
+input, select{
+    padding: 5px 10px;
+}
+
+form fieldset div input{
+    width: 50%;
+}
+
+
+select, textarea{
+    width: 50%;
+    min-width: 300px;
+    padding: 10px;
+}
+
+input, textarea, select, button{
+    font-family: 'Poppins', sans-serif;
+    border-radius: 5px;
+    border: none;
+}
+
+button{
+    width: 50%;
+    padding: 10px;
+}
+
+.contactSection{
+    display: flex;
+    gap: 20px;
+    padding: 100px 5%;
+}
+
+.formSection{
+    width: 64%;
+}
+
+
+.contactInfo{
+    width: 32%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding: 40px 30px;
+    background-color: #928f8f;
+    color: white;
+    border-radius: 10px;
+}
+
+.contactInfo i{
+    color: #2e1537;
+    display: flex;
+    align-items: center;
+}
+
+.contactInfo section{
+    display: flex;
+    gap: 20px;
+}
+
+/* Banner */
+
+.heroServices {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 25vh 5%;
+}
+
+
+.heroServices p{
+    color: white;
+    position: relative;
+    z-index: 10;
+}
+
+@media (max-width:1000px) {
+    form fieldset div{
+        flex-direction: column;
+        align-items: baseline;
+    }
+        select,
+        textarea,
+        form fieldset div input,
+        option{
+        width: 100%;
+    }
+
+    .formSection, .contactInfo{
+        width: 48%;
+    }
+}
+
+@media (max-width:768px){
+    .contactSection{
+        flex-direction: column;
+    }
+
+    .formSection, .contactInfo, button{
+        width: 100%;
+    }
+}
