@@ -4,154 +4,163 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <link rel="stylesheet" href="./styles/styles.css">
-    <link rel="stylesheet" href="./styles/home.css">
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="./general.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="./script.js" async></script>
     <title>Cosmo</title>
 </head>
 <body>
-    <!-- Header -->
-    <header id="header">
-        <section class="logo">
-            <img src="./img/cosmoLogo.png" alt="">
-        </section>
-
-        <nav class="pcNav">
-            <ul>
-                <li><a href="./index.html" class="current">Home</a></li>
-                <li><a href="./pages/equipe.html">L'Equipage</a></li>
-                <li><a href="./pages/services.html">Nos Missions</a></li>
-                <li class="contactNav"><a href="./pages/contact.html">Contact</a></li>
-            </ul>
-        </nav>
-
-        <i class="fa-solid fa-bars hambugerMenu" onclick="appearNav()"></i>
-
-        <nav class="otherNav" id="otherNav">
-            <ul>
-                <li><a href="./index.html" class="current">Home</a></li>
-                <li><a href="./pages/equipe.html">L'Equipage</a></li>
-                <li><a href="./pages/services.html">Nos Missions</a></li>
-                <li class="contactNav"><a href="./pages/contact.html">Contact</a></li>
-            </ul>
-        </nav>
+    <header>
+        <figure>
+            <img src="./img/cosmoLogo.png" alt="logo de l'agence cosmo. Le premier O est remplacé par une tête de lapin portant un masque d'astronaute">
+        </figure>
     </header>
 
-
-    <!-- Main -->
     <main>
-        <!-- Hero -->
+        <!-- Hero section -->
         <article class="hero">
-            <section class="hero_text">
-                <h1>Atteignez vos objectifs avec <span>Cosmo</span> <br>
-                    Votre agence de communication Web à Paris 
-                </h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque animi illo eius quidem quas nemo vero qui voluptatem, architecto velit!</p>
-                <a href="./pages/contact.html">Contactez-Nous <i class="fa-solid fa-arrow-right"></i></a>
+            <section class="hero_texte">
+                <h1>Lorem ipsum dolor sit, amet consectetur adipisicing.</h1>
+                <h2>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius, tempora!</h2>
+                <a href="">Contacter l'équipage</a>
             </section>
-            <section class="hero_img">
-                <img src="./img/logoCosmo.png" alt="">
-            </section>
+            <figure class="hero_img">
+                <img src="./img/lapinBanner.png" alt="">
+            </figure>
         </article>
 
-        <!-- Services -->
-        <article class="services first_service">
-            <section class="services_img">
-                <h1>Une agence Web au service de vos projets</h1>
-            </section>
-            <section class="services_text">
-                <p>Notre agence se distingue par notre approche créative personnalisée. Nous pensons en dehors des sentiers battus et nous
-                adaptons chaque stratégie à la vision et aux besoins spécifiques de nos clients. Notre capacité à traduire leurs idées
-                en concepts visuels puissants et à raconter des histoires captivantes nous permet de créer des expériences uniques et
-                mémorables pour leurs publics cibles.
-                <br>
-                Nous apportons une expertise complète en communication, avec une équipe dynamique de développeurs, de graphistes et de
-                community managers. Nous offrons des services de création de sites web, de design graphique, de gestion des réseaux
-                sociaux, de campagnes publicitaires, de branding et bien plus encore. Nous mettons notre créativité et notre
-                savoir-faire au service de nos clients pour les aider à atteindre leurs objectifs de communication et à se démarquer de
-                leurs concurrents.
-            </p>
-                <a href="./pages/equipe.html">Je découvre l'équipage <i class="fa-solid fa-arrow-right"></i></a>
-            </section>
-        </article>
+        <!-- Missions -->
 
-        <article class="les_services">
-        
-            <h1>Nos Missions</h1>
-        
-            <section class="section_services">
-        
-                <div class="service_cellule">
-                    <div class="celluleIcone">
-                        <i class="fa-solid fa-computer"></i>
-                    </div>
-                    <h1>Développement Web</h1>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ullam, facere voluptatem molestiae placeat quos
-                        numquam quam reiciendis vero dolor iusto recusandae id dignissimos qui ab dolorum accusantium natus sint
-                        vitae.</p>
+        <article class="missions">
+            <h1>Nos missions</h1>
+            <section class="missions_section">
+                <div class="missions_card">
+                    <h2>Communication</h2>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil harum molestiae fuga est, veritatis quos.</p>
+                    <a href="https://fontawesome.com/icons/square-instagram?f=brands&s=solid" id="btnPage0"><img src="./img/fusee.png" alt="image d'une fusée"></a>
                 </div>
-
-                <div class="service_cellule">
-                    <div class="celluleIcone">
-                        <i class="fa-solid fa-hashtag"></i>
-                    </div>
-                    <h1>Réseaux sociaux</h1>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ullam, facere voluptatem molestiae placeat quos
-                        numquam quam reiciendis vero dolor iusto recusandae id dignissimos qui ab dolorum accusantium natus sint
-                        vitae.</p>
+                <div class="missions_card">
+                    <h2>Création numérique</h2>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil harum molestiae fuga est, veritatis quos.</p>
+                    <a target="_blank" href="google.com" id="btnPage1"><img src="./img/fusee.png" alt="image d'une fusée"></a>
                 </div>
-
-                <div class="service_cellule">
-                    <div class="celluleIcone">
-                        <i class="fa-solid fa-play"></i>
-                    </div>
-                    <h1>Pubs</h1>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ullam, facere voluptatem molestiae placeat quos
-                        numquam quam reiciendis vero dolor iusto recusandae id dignissimos qui ab dolorum accusantium natus sint
-                        vitae.</p>
-                </div>
-
-                <div class="service_cellule">
-                    <div class="celluleIcone">
-                        <i class="fa-solid fa-computer"></i>
-                    </div>
-                    <h1>Développement Web</h1>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ullam, facere voluptatem molestiae placeat quos
-                        numquam quam reiciendis vero dolor iusto recusandae id dignissimos qui ab dolorum accusantium natus sint
-                        vitae.</p>
+                <div class="missions_card">
+                    <h2>Développement web</h2>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil harum molestiae fuga est, veritatis quos.</p>
+                    <a target="_blank" href="google.com" id="btnPage2"><img src="./img/fusee.png" alt="image d'une fusée"></a>
                 </div>
                 
-                <div class="service_cellule">
-                    <div class="celluleIcone">
-                        <i class="fa-solid fa-hashtag"></i>
-                    </div>
-                    <h1>Réseaux sociaux</h1>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ullam, facere voluptatem molestiae placeat quos
-                        numquam quam reiciendis vero dolor iusto recusandae id dignissimos qui ab dolorum accusantium natus sint
-                        vitae.</p>
-                </div>
-                
-                <div class="service_cellule">
-                    <div class="celluleIcone">
-                        <i class="fa-solid fa-play"></i>
-                    </div>
-                    <h1>Pubs</h1>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ullam, facere voluptatem molestiae placeat quos
-                        numquam quam reiciendis vero dolor iusto recusandae id dignissimos qui ab dolorum accusantium natus sint
-                        vitae.</p>
-                </div>
-
-               
             </section>
         </article>
 
-        <article class="parlons">
-            <h1>Parlons de votre projet</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore pariatur aperiam delectus consectetur laudantium iusto incidunt natus iure alias nihil!</p>
-            <a href="./pages/contact.html">CONTACTEZ-NOUS</a>
+        <!-- Valeurs -->
+        <article class="valeurs">
+            <h1>Les valeurs de bord</h1>
+            <section class="section_valeurs">
+                <div class="card_valeurs">
+                    <img src="./img/Icone1.svg" alt="">
+                    <h2>Collaboration</h2>
+                </div>
+                <div class="card_valeurs">
+                    <img src="./img/Icone2.svg" alt="">
+                    <h2>Unnicité</h2>
+                </div>
+                <div class="card_valeurs">
+                    <i class="fa-regular fa-lightbulb"></i>
+                    <h2>Innovation</h2>
+                </div>
+                <div class="card_valeurs">
+                    <img src="./img/Icone4.svg" alt="">
+                    <h2>Créativité</h2>
+                </div>
+            </section>
+        </article>
+
+
+        <!-- Team -->
+        <article class="equipage">
+            <h1>Notre équipage</h1>
+            <section class="equipage_row1">
+                <figure>
+                    <img src="./img/team.png" alt="photo de l'équipe, en tenu d'astronautre dans un vaisseaux spaial">
+                </figure>
+                <section class="equipage_texte">
+                    <h3>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloremque est, <span>soluta alias a veritatis dolores.</span></h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo voluptatibus rem asperiores <span>soluta dolores.</span> quis consectetur beatae officiis doloribus maiores necessitatibus at. Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, incidunt. Eligendi harum excepturi inventore! Tempora!</p>
+                </section>
+            </section>
+            <section class="equipageInteractif">
+                <div class="equipage_links">
+                    <a href="#">Lorem</a>
+                    <a href="#">Lorem</a>
+                    <a href="#">Lorem</a>
+                    <a href="#">Lorem</a>
+                    <a href="#">Lorem</a>
+                </div>
+                <div class="equipagerow2">
+                    <h1>Commandant</h1>
+                    <div class="equipageCard">
+                        <div class="firstcolumn">
+                            <img src="./img/thumb_pietro.png" alt="">
+                        </div>
+                        <ul class="secondcolumn">
+                            <li><strong>Nom</strong>
+                                <p>Renata</p>
+                            </li>
+                            <li><strong>Nom</strong>
+                                <p>Renata</p>
+                            </li>
+                            <li><strong>Nom</strong>
+                                <p>Renata</p>
+                            </li>
+                            <li><strong>Nom</strong>
+                                <p>Renata</p>
+                            </li>
+                            <li><strong>Nom</strong>
+                                <p>Renata</p>
+                            </li>
+                            <li><strong>Nom</strong>
+                                <p>Renata</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+        </article>
+
+
+        <article class="contact">
+            <h1>Contacter l'équipage</h1>
+            <section class="contact_section">
+                <section>
+                    <ul>
+                        <li>
+                            <img src="./img/planet1.png" alt="">
+                            <p>07 65 75 68 92</p>
+                        </li>
+                        <li>
+                            <img src="./img/planet2.png" alt="">
+                            <p>support@cosmo.com</p>
+                        </li>
+                        <li>
+                            <img src="./img/planet3.png" alt="">
+                            <p>125 Avenue François Molé <br> 92160 Antony</p>
+                        </li>
+                    </ul>
+                    <div class="rs">
+                        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="#"><i class="fa-brands fa-square-instagram"></i></a>
+                    </div>
+                </section>
+                <figure>
+                    <img src="./img/lapinend.png" alt="">
+                </figure>
+            </section>
+            
         </article>
     </main>
+
 
     <footer>
         <section class="secondFooter">
@@ -168,6 +177,6 @@
         </section>
     </footer>
 
-    <script src="./js/script.js"></script>
+    
 </body>
 </html>

@@ -1,0 +1,399 @@
+:root{
+    --mainColor: #571C56;
+}
+
+header{
+    background-color: #571C56;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    padding-top: 5px;
+}
+
+
+
+header figure{
+    width: 200px;
+}
+
+
+article{
+    display: flex;
+    gap: 20px;
+    padding: 100px 5%;
+}
+
+/* Banner */
+
+.hero{
+    padding: 40px 5%;
+    align-items: center;
+    justify-content: space-between;
+    background-image: url(./img/banner.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.hero .hero_texte{
+    width: 60%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.hero .hero_img{
+    width: 40%;
+}
+
+
+.hero h1{
+    font-size: 4rem;
+}
+
+.hero h2{
+    font-size: 1rem;
+    letter-spacing: 2px;
+    font-weight: 400;
+}
+
+
+.hero a{
+    background-color: var(--mainColor);
+    color: white;
+    width: fit-content;
+    padding: 18px 36px;
+    border-radius: 5px;
+    letter-spacing: 2px;
+    font-weight: bold;
+    transition: 0.2s ease-in-out;
+}
+
+
+
+/* Missions */
+
+.missions{
+    flex-direction: column;
+    align-items: center;
+    gap: 120px;
+    color: white;
+}
+
+.missions h1{
+    font-size: 3rem;
+    letter-spacing: 2px;
+}
+.missions_section{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+.missions_card{
+    position: relative;
+    background-color: var(--mainColor);
+    padding: 40px 20px;
+    text-align: center;
+    padding-bottom: 60px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    border-radius: 21px;
+}
+
+
+.missions_section a{
+    position: absolute;
+    width: 60px;
+    bottom: -60px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+
+.animatedFusee{
+    animation: tilt-shaking 0.2s ease forwards infinite, fuseeFly 0.5s ease forwards;
+}
+
+@keyframes tilt-shaking {
+    0% {
+        transform: translateX(-50%) rotate(0deg);
+    }
+
+    25% {
+        transform: translateX(-50%) rotate(5deg);
+    }
+
+    50% {
+        transform: translateX(-50%) rotate(0eg);
+    }
+
+    75% {
+        transform: translateX(-50%) rotate(-5deg);
+    }
+
+    100% {
+        transform: translateX(-50%) rotate(0deg);
+    }
+}
+
+@keyframes fuseeFly {
+    to{
+        bottom: 100vh;
+    }
+}
+
+
+body.locked {
+    overflow: hidden;
+}
+
+/* Valeurs */
+
+.valeurs {
+    flex-direction: column;
+    align-items: center;
+    gap: 120px;
+    color: white;
+    letter-spacing: 2px;
+}
+
+.valeurs h1 {
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+
+.valeurs section{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    width: 100%;
+}
+
+.card_valeurs{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+}
+
+.card_valeurs i{
+    font-size: 100px;
+}
+
+.card_valeurs img{
+    height: 100px;
+    object-fit: contain;
+}
+
+
+/* Equipage */
+
+.equipage {
+    flex-direction: column;
+    align-items: center;
+    gap: 60px;
+    color: white;
+    letter-spacing: 2px;
+}
+
+.equipage h1 {
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+
+.equipage_row1{
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+.equipage_row1 figure, .equipage_texte{
+    width: 50%;
+}
+
+.equipage_texte span{
+    color: #FFB800;
+}
+
+.equipage_texte h3{
+    margin-bottom: 20px;
+}
+
+.equipageInteractif{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 70px;
+    padding: 60px 80px;
+    border-radius: 21px;
+    background-color: #ffffff50;
+    width: 100%;
+    backdrop-filter: blur(8px);
+}
+
+
+.equipage_links{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+}
+
+.equipage_links a{
+    color: white;
+}
+
+
+.equipagerow2{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+
+.equipageCard{
+    display: flex;
+    gap: 30px;
+    width: 100%;
+    justify-content: space-between;
+}
+
+
+.firstcolumn, .secondcolumn{
+    width: 50%;
+}
+
+.firstcolumn img{
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+.secondcolumn{
+    display: flex;
+    flex-direction: column;
+}
+
+.secondcolumn li{
+    display: flex;
+    align-items: center;
+    padding: 20px 40px;
+    border-bottom: 1px solid white;
+}
+
+.secondcolumn li strong, .secondcolumn li p{
+    width: 50%;
+}
+
+
+/* Contact */
+
+.contact {
+    flex-direction: column;
+    align-items: center;
+    gap: 60px;
+    color: white;
+    letter-spacing: 2px;
+}
+
+.contact h1 {
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+
+.contact_section{
+    display: flex;
+    justify-content: center;
+    gap: 120px;;
+    width: 100%;
+}
+
+.contact_section section{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.contact_section ul{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.contact_section li{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.contact_section li:nth-child(2){
+    padding-left: 40px;
+}
+
+.contact_section li:nth-child(3){
+    padding-left: 10px;
+}
+
+.contact_section img {
+    object-fit: contain;
+}
+
+.contact_section li img{
+    width: 80px;
+}
+
+.contact_section figure img{
+    height: 400px;
+}
+
+
+.rs i{
+    font-size: 2.5rem;
+    color: white;
+    margin-right: 30px;
+}
+
+
+
+/* Footer */
+
+footer {
+    background-color: var(--mainColor);
+    border-top: 2px solid #22222290;
+    color: white;
+    padding: 10px 5%;
+}
+
+footer section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 0.9rem;
+}
+
+footer ul {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+footer ul i {
+    font-size: 1.2rem;
+    color: white;
+}
+
+@media (max-width:610px) {
+    footer section {
+        gap: 20px;
+        flex-direction: column-reverse;
+    }
+}
