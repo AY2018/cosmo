@@ -223,6 +223,10 @@ body.locked {
     color: #FFB800;
 }
 
+.purpleSpan{
+    color: #c967e6 !important;
+}
+
 .equipage_texte h3{
     margin-bottom: 20px;
 }
@@ -262,7 +266,7 @@ body.locked {
 
 
 .equipageCard{
-    display: flex;
+    display: none;
     gap: 30px;
     width: 100%;
     justify-content: space-between;
